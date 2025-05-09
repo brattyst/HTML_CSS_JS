@@ -1,0 +1,94 @@
+- script tag
+  브라우저가 이 태그를 만나면 안의 코드를 자동으로 처리함
+  - Attribute 
+    - type : <script type= ...> </script>
+    HTML 4에서 명시 하는게 필수였음/ 현재 명시 필수가아니게 되서 잘 안쓰임
+    - language : <script language = ...></script>
+    현재 사용하고있는 스크립트 언어를 나타냄. 지금은 자바스크립트가 기본 언어 기에 속성의 이미가 퇴색됨.
+    
+    - src : <script src="path.."></script>
+    외부에서 js 파일을 불러옴. 절대경로 혹은 상대경로로 지정가능.
+      !주의점 : scr 속성이 있다면 내부코드 무시함
+
+
+- Semicolon
+  JS에서는 줄바꿈이 있으면 '암시적' 세미콜론으로 해석딤 (automatic semicolon insertion)
+  * 생략가능하지만 세미콜론을 사용하도록. 예제
+
+- Comment
+  // : 한줄짜리주석
+  /* */ : 복수의 줄
+
+- 엄격 모드
+  "use strict"; or 'use strict' 
+  오류를 더 엄격하게 감지, 방수할 수 있게 함.
+  스크립트의 최상단 이아닌 함수 본문 맨앞에 올 수도 있다. 작성된것 기준 뒤에것만 작성됨. 
+
+- 변수 선언 
+  - let, var :
+  동일한 역할이지만, var 은 오래된 방식. 미묘한 차이점이 있다함
+
+  - camelCase 가 주로 사용됨
+
+  -use strict 를 사용할것
+   ex)
+      num = 5;  // num 정의 되지않아도, 단순 할당으로 변수가 생성됨.
+      alert(num) // 5
+
+      ==============
+
+      "use strict";
+      num = 5; // error: num is not defined
+
+- 상수 선언
+  - const = ..; 
+  : 변화 하지않은 변수를 선언시 사용
+  대문자로 상수 선언 추천 '하드 코딩한' 값의 별칭을 만들 때 사용한다.
+
+
+- 자료형
+  - string : "txt", 'txt', `txt` 3개가 있다.
+    "", '' :  기본적인 따옴표로 큰 차이점이 없음.
+    `` : back tick 
+    역 따옴표로 변수나 표현식을 감싼후 ${}를 사용해 변수나 표현식을 문자열 중간에 넣을수 있음.
+
+    *char 타입은 존재 하지않음.
+
+  -boolean : 기본적으로 같음 
+
+  - null : 어느 자료형에도 속하지않음. 자바스크립트에서는 
+   empty valuable unknown valuable의 의미로 쓰임
+
+   -undifined : 변수 선언 했지만, 값은 할당하지않았다면 변수에 자동으로 할당됨. 명시적으로 할당 가능.
+
+   *`알수없는` 상태를 나타내려는거면 null 사용을 추천함. undefined는 값이 할당되지 않은 변수의 초기값을 위해 예약어로 남겨둔다.*
+
+
+
+- typeof : 연산자는 피연산자의 자료형을 알려줍니다.
+
+  typeof x 또는 typeof(x) 형태로 사용합니다.
+  피연산자의 자료형을 문자열 형태로 반환합니다.
+  null의 typeof 연산은 "object"인데, 이는 언어상 오류입니다. null은 객체가 아닙니다.
+
+
+상호작용
+ -alert : 메세지가 있는 작은 창 모달창(modal window) 확인 버튼 이외에 행동불가 확인 버튼하 모달창 바깥에 있는 버튼을 눌루거나 할수있음.
+
+- prompt : 두개의 인자를 전달밭음
+  prompt(title, [default]);
+    -title : 사용자에게 보여줄 문자열
+    -default : 입력필드의 초기값 []는 optional 이라는 뜻.
+
+    -> Cancel 혹은 ESC로 빠져나갈수있고, 입력 취소의 경우 null이 반환됨.
+
+  - confirm :
+  result = confirm(question);
+
+  매개변수로 받은 질문과 확인 취소 버튼이 있는 ㅁ모달 창을 보여줌
+  확인시 ture 그외의 경우 false 를 반환함.
+    
+원시형의 변환
+
+- 문자형으로 반환
+  
