@@ -1,0 +1,39 @@
+Chapter 1 to 17
+
+- comment
+<!-- 주석내용 -->
+
+- <strong>   </strong> / <b>   </b> => 볼드체 표기. strong의 경우 스크린 리더 사용시 페이지 해석시 거센 억양 음을 내고, 텍스트를 단순히 강조할뿐 아니라 페이지 내의 중요한 부분으로 브라우저에게 알려주게 하는 역할을 함.
+
+- %lt; -> " < " less than
+- %gt; -> " > " greater than
+
+- Headings
+The <h1> to <h6> tags are used to define HTML headings.
+<h1> defines the most important heading. <h6> defines the least important heading.
+제목을 나타내는 태그...
+
+- <br> line break : 단지 줄바꿈 태그 닫는 태그없음(empty tag)
+HTML4 : <br>만 허용
+HTML5 : <br> 선호, <br/> 및 <br /> 사용 가능
+XHTML : <br /> 선호, <br/> 및 <br></br> 사용 가능
+
+맥락적으로는 <p> </p>  태그가 적절함.
+
+이미지 태그(inline element)
+<img src ="" />
+개행된 형태로 출력하기 위해서
+<div> </div> 사용할것 
+
+div? -> division 레이아웃을 나누는데 사용됨.
+
+
+list parnet : 
+Ordered List  <ol></ol>
+Unordered List <ul></ul>
+child -> <li></li>
+
+<a> </a> tag 
+hyperlink를 정의 할때 사용함. 
+<a href= "주소"> </a> 로 하이퍼링크를 걸수있음. 
+target = "_blank" 를 넣으면 새로운탭에서 열기
