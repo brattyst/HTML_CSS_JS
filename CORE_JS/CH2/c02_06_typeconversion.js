@@ -1,5 +1,5 @@
-let value = true;
-alert(typeof value);
+// let value = true;
+// alert(typeof value);
 
-value = String(value);
-alert(typeof value);
+// value = String(value);
+// alert(typeof value);
