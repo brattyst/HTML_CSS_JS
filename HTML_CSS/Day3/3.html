@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>table</title>
+  </head>
+  <body>
+    <table border="1">
+      <caption>
+        제품 (표제목)
+      </caption>
+      <col style="width: 80px" />
+      <colgroup span="2" style="width: 150px"></colgroup>
+      <col style="width: 80px"
+      <thead>
+        <tr>
+          <th>번호</th>
+          <th>상품명</th>
+          <th>수량</th>
+          <th>가격</th>
+        </tr>
+      </thead>
+      <tfoot>
+        <tr>
+          <td>총금액</td>
+          <td colspan="3">6500원</td>
+        </tr>
+      </tfoot>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>콜라</td>
+          <td>99</td>
+          <td>2000원</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>사이다</td>
+          <td>23</td>
+          <td rowspan="2">3000원</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>탄산수</td>
+          <td>2345</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>

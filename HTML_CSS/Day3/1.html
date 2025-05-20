@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>form</title>
+  </head>
+  <body>
+    <form action="#">
+      <fieldset>
+        <legend>선택</legend>
+        <label for="lang">Language</label>
+        <select>
+          <optgroup label="언어">
+            <option value="JS">JavaScript</option>
+            <option value="php">PHP</option>
+            <option value="java" selected>Java</option>
+            <option value="python">Python</option>
+            <option value="golang">Golang</option>
+          </optgroup>
+          <optgroup label="없음">
+            <option value="없음">없음</option>
+          </optgroup>
+        </select>
+      </fieldset>
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
